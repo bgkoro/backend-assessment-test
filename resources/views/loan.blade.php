@@ -4,9 +4,8 @@
 
 <p>Loan Amount: ${{ $loanAmount }}</p>
 <p>Repayment Period: {{ $repaymentPeriod }} months</p>
-<p>Monthly Payment: ${{ $monthlyPayment }}</p>
 @foreach ($date_pay as $datepay)
-    <p> {{ $datepay }} </p>
+    <p>Scheduled Repayment of {{ $monthlyPayment }}$ due to {{ $datepay }}</p>
 @endforeach
 
 
