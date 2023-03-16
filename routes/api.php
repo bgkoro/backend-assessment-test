@@ -3,7 +3,8 @@
 use App\Http\Controllers\DebitCardController;
 use App\Http\Controllers\DebitCardTransactionController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\API\RegisterController;
+use App\Services\LoanService;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::post('register', [RegisterController::class, 'register']);
+Route::post('login', [RegisterController::class, 'login']);
 
 Route::middleware('auth:api')
     ->group(function () {
@@ -28,4 +31,7 @@ Route::middleware('auth:api')
         Route::get('debit-card-transactions', [DebitCardTransactionController::class, 'index']);
         Route::post('debit-card-transactions', [DebitCardTransactionController::class, 'store']);
         Route::get('debit-card-transactions/{debitCardTransaction}', [DebitCardTransactionController::class, 'show']);
+
+        // Loan
+        Route::get('/loan', [LoanService::class, 'createLoan']);
     });

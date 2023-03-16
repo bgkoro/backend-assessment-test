@@ -1,0 +1,1003 @@
+{
+	"info": {
+		"_postman_id": "5a9bf001-03ef-4ce5-9d19-3699a4557e15",
+		"name": "laravel_backend_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24873518"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Bagaskoro",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "putrabagaskoro17@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123123",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Bagaskoro",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "putrabagaskoro17@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123123",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:57:49 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:57:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWJkOTZhNTMyMGZiMTI4MTBlMWZjMGI2M2RjZWJjNjg4Y2Q2ODQ1OWY4Y2QwODg4NDk4NDQwMmQwNTgzNmI0MzBlNjQ4M2VhNTliMWNjMjciLCJpYXQiOjE2Nzg5MzkwNjkuMDU5MTkxLCJuYmYiOjE2Nzg5MzkwNjkuMDU5MTkyLCJleHAiOjE3MTA1NjE0NjkuMDUyNzMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.XXfBOK4hIAaMONPc9YxVuzsouWmyYRbPMRzYSrH5k7PGQ62EQd0DthUKDjtstGw70_eX9kc1zYs-_RW092Sh_phlXEq9NR29cifH3zX1wXOSbRnm5on7HK0g_ZrAnm-oOInJWYrULG3jij1rWlh6g3VzVHs_6qz6stuEpFbkDTBrcl-xr2Nkui7R_opYCOBbXZKm7avNZZnVdRMjzb7SAEISWOUfAHWVL_uYBD9VSFH3N60IMm09i9Z6q2wHHhBEV2gj__BgECjNDhWohq1c699qyFNixm-dzOteRO1rb6zvInRZgon7WYUUFGs2hn4v5GPxNDi22vuY_DsqkJCWeCqk4fR2OyftVG8mC4vNQ8PPofecRQvyf0ymOgW_xJrb8qdSSbMMY7218KzmpOyT2oI6JksnsX752hwVDqhr2T6gEZ2hXZdsoXQIxi3kfwDdXkCx5kdCqielXfpEaybEwcM5CFtPrmb2AU2xHAOgmRYSVgncZYV_Yw4Ls1VFOSu78UuxrPpCaIjgNWIyYK2vUdWxsp4aDlULarhgKYQVhj03Ha3FDD5Y34A9WY_f_-yVpwKRpS43jZ5FLcMKc07Nl4K4vXJnRudG0hbE5N3ITz8eY2jpvWANOGBHg8xlvXslN85PzoLPxRpPCyghQYlCCDMKOJcohM7xq-lhddqvkCs\",\n        \"name\": \"Bagaskoro\"\n    },\n    \"message\": \"User register successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "putrabagaskoro17@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "putrabagaskoro17@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:59:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:59:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU\",\n        \"name\": \"Bagaskoro\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get debit-cards",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get debit-cards",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:11:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:11:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"number\": 2,\n        \"type\": \"CARD\",\n        \"expiration_date\": \"2024-03-16 04:10:36\",\n        \"is_active\": true\n    },\n    {\n        \"id\": 3,\n        \"number\": 3,\n        \"type\": \"CARD 3\",\n        \"expiration_date\": \"2024-03-16 04:11:03\",\n        \"is_active\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post debit-cards",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "999",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "9999999",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "CARD 999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post debit-cards",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "CARD 3",
+									"type": "text"
+								},
+								{
+									"key": "expiration_date",
+									"value": "2023-03-20",
+									"type": "text"
+								},
+								{
+									"key": "disabled_at",
+									"value": "2023-03-21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:11:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:11:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"number\": \"3\",\n    \"type\": \"CARD 3\",\n    \"expiration_date\": \"2024-03-16T04:11:03.132947Z\",\n    \"is_active\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "debit-card detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "debit-card detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:15:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:15:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"number\": 3,\n    \"type\": \"CARD 3\",\n    \"expiration_date\": \"2024-03-16 04:11:03\",\n    \"is_active\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "put debit-card",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "disabled_at",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "put debit-card",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "disabled_at",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:50:49 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:50:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"number\": 3,\n    \"type\": \"CARD 3\",\n    \"expiration_date\": \"2024-03-16 04:48:27\",\n    \"is_active\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTYyMGEyMjUxNzY3ZTAxNTJjZjc5MTZmZjhhOTM1OTRmMjRlNDdkNmRlMzQyNjhhZmRlOGZiNWYyNDI4MTIwODI2N2NjZmRhZWYwZjMwNDAiLCJpYXQiOjE2Nzg5MzkxNjIuMjI2OTQsIm5iZiI6MTY3ODkzOTE2Mi4yMjY5NDMsImV4cCI6MTcxMDU2MTU2Mi4yMjE2NDcsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.ak54gO-4tjuKYI0K8_9fHygnRs-KSiXAjGLXk18RNqNYBIRIpkTKu4HMI3R9o5-UQtbEEJczTh8D9t4ReiTtE-JHJqqyy8pQOU3ByRDCuhbMwWf5XV9d5A3FvGUp4--qury48wZYA59bR_cTYymlptmiyvrW-fdRnsmJu6WZ2L7WltpNGl_qdwKM4vh1g7xTNWCiqbjkO87TsBWBb15OLfyF9THhICNCo4dqRs4YGEdYaxy4b5en6E6_3v9hM0LUA3F4YNUqjhDb3bL6-YTbrxM11fv5szQFOv6MSZDEHvSzgNdthRRW2S_ORNlWLvV9D9f9sl2Jxm896jgOYaPHA3XN4A5ydJqKq8DB9Q1BkyxsUsJ4cUSTakowXt8TKXIfkqXmuEiRfP-WC85JYupYWLtmbMGpoePNIME70-u0nt342MjN-89-55c-JcJGcxvmHgl5KGaggYhcTZnJp27RdiMLVXjR_WZsIBcY_d3WTD2PRMd4NbWOqqQdlfZm1sF5geXtAyFa6SP5avIKsqxStq5BblFnoJSxlVzLyajfPXqgXAbAkj1Sp441GG4N-cw9Zd-ML5aXmkDVxUmzjMGZKmPNMuPfuVRHdijgvbiXMXoi2Ys4ajuugbxZbaqM4fBESUQQx28uF8X5aILA6bC9T7-Y3_fx7HMms2fLQRfQbNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards",
+								"5"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:47:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:47:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/debit-cards/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"debit-cards",
+								"5"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:47:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:47:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Loan",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "loan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/loan/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"loan",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 07:02:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 07:02:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6InVNaUE0TVpkRUdKYVM0U3IzM3Z3Zmc9PSIsInZhbHVlIjoiRDdqTmZVZHRIVkc3YzUvaG1aazhtbnZ0UmFxUExVdnQyUGVKUG0rdm1CM1JQVVpvQk5weThnQUtOZmhGM3pLa2U0dkRJNUpiVFJnM2s5T0c0NnVXN00vSzZFa3RzbzRQa3lmckRuWDF4dFpyVkhZbUgyU2poR0Q1V3NyU1BtWHIiLCJtYWMiOiIyNjY1NzMwZmY0ZWUxZmFmNDQzMzE0OTNhNGZkODg3OTg4MjM3MTk0YWUxNDkyZjAyODJjZDk3YTQ4NzJkZDdhIiwidGFnIjoiIn0%3D; expires=Thu, 16-Mar-2023 09:02:12 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImFoMloxVEJxcHB4UFdDWTVPMytMVFE9PSIsInZhbHVlIjoiN1VKdmU5SVkyYUVwV1JpN3lYdkRrR1NQbkRncW4yQitJSUF1azZGam1OTU5FQWNmT0dKNW0yOHhXakkwZXRxcnc4YTVRRGRnUnNQOVZXTGpiR21BS3dwQ1dHdm1xVEpOZnBYY3Q3cXdSY2s4QXY1MXdKTVV1V3VDZUdWak9KS1kiLCJtYWMiOiJjMzI1ZGRiMTNhODY0NzA1MDQ2NzlkMDE3ZTMzOTUyZTJkOGZkMDAzM2MxYTU2NGYzZmMxNTNiZWExMDEwZjJhIiwidGFnIjoiIn0%3D; expires=Thu, 16-Mar-2023 09:02:12 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "<!-- resources/views/loan.blade.php -->\n<h1>Loan Details</h1>\n<p>Loan Amount: $3000</p>\n<p>Repayment Period: 3 months</p>\n<p>Monthly Payment: $1000</p>\n<p> 2023-03-16 </p>\n<p> 2023-04-16 </p>\n<p> 2023-05-16 </p>"
+				}
+			]
+		}
+	]
+}

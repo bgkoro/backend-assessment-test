@@ -25,7 +25,8 @@ class DebitCardUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'is_active' => 'required|boolean',
+            // 'is_active' => 'required|boolean',
+            'disabled_at' => 'boolean',
         ];
     }
 }
